@@ -29,7 +29,6 @@ export class Supplier{
             throw new ValidationError('Supplier ID must be a valid Supplierid object');
         if(typeof name!=='string' || name.length<2 || name.length>100)
             throw new ValidationError('Supplier Name must be a valid Supplierid object');
-        //TODO: Validate contactEmail sing isValidEmail function
         if(contactEmail!==null && !this.isValidEmail(contactEmail))
             throw new ValidationError('Contact Email must be a valid Supplierid object');
         if(lastOrderTotalPrice!==null&&!(lastOrderTotalPrice instanceof Money))
