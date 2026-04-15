@@ -25,7 +25,8 @@ export class Currency {
             return this.#code;
         }
         equals(other){
-            return other instanceof Currency && this.#code === other.code;
+            return other instanceof Currency
+                && this.#code === other.code;
         }
     }
 }
