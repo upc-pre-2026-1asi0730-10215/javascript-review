@@ -21,6 +21,8 @@ export class ProductId{
         return this.#value;
     }
     equals(other){
-        return other instanceof ProductId;
+        return other instanceof ProductId && this.#value === other.#value;
     }
+
 }
+
